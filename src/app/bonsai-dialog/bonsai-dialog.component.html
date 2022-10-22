@@ -1,0 +1,46 @@
+<mat-form-field>
+    <mat-label>Id</mat-label>
+    <input
+        matInput
+        cdkFocusInitial
+        [(ngModel)]="data.bonsai.id"/>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Title</mat-label>
+    <input
+    matInput
+    cdkFocusInitial
+    [(ngModel)]="data.bonsai.title"/>    
+    
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Description</mat-label>
+    <textarea
+    matInput
+    cdkFocusInitial
+    [(ngModel)]="data.bonsai.description"></textarea>
+</mat-form-field>
+
+<mat-form-field>
+    <mat-label>Image Url</mat-label>
+    <textarea
+    matInput
+    cdkFocusInitial
+    [(ngModel)]="data.bonsai.pictureLink"></textarea>
+</mat-form-field>
+
+
+
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="{bonsai:data.bonsai}">OK</button>
+    <button mat-button (click)="cancel()">Cancel</button>
+    <button 
+    *ngIf ="data.enableDelete"
+    mat-fab
+    color="primary"
+    aria-label="Delete"
+    [mat-dialog-close]="{bonsai:data.bonsai, delete:true}"></button>
+
+</div>

@@ -1,0 +1,12 @@
+<p></p>
+<mat-card
+    class="item"
+    *ngIf="bonsai"
+    (dbclick)="edit.emit(bonsai)"
+    >
+    <h3>{{bonsai.title}}</h3>
+    <p>
+        {{bonsai.description}}
+        <img src="{{bonsai.pictureLink}}"/>
+    </p>
+</mat-card>
