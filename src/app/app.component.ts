@@ -3,8 +3,7 @@ import {MatDialog} from "@angular/material/dialog";
 import {CdkDragDrop, transferArrayItem} from "@angular/cdk/drag-drop";
 import {BonsaiDialogComponent} from "./bonsai-dialog/bonsai-dialog.component";
 import {Bonsai} from './bonsai/bonsai';
-import {BonsaiD
-  ialogResult} from './bonsai/bonsai';
+import {BonsaiDialogResult} from './bonsai/bonsai';
  //Makaylas code 
 
 @Component({
